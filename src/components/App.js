@@ -60,19 +60,26 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Constructor Baps</h1>
-        <Menu menuItems={menuItems} />
-        <h2>Locations</h2>
-        {/* <Location locations={locations} /> */}
-        <ul>
-          {locations.map(location => {
-            return (
-              <li key={location.id}>
-                {location.address} {location.email} {location.telephone}
-              </li>
-            );
-          })}
-        </ul>
+        <div className="title">
+          <h1>Constructor Baps</h1>
+          <img src="https://files.slack.com/files-pri/T85AGSEH3-FCZQWMMJ4/photo1.jpg" />
+        </div>
+        <div className="map-container">
+          <h2>Menu</h2>
+          <Menu menuItems={menuItems} />
+        </div>
+        <div className="locations-container">
+          <h2>Locations</h2>
+          <ul>
+            {locations.map(location => {
+              return (
+                <li key={location.id}>
+                  {location.address} {location.email} {location.telephone}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     );
   }

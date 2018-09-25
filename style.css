@@ -1,0 +1,24 @@
+body {
+    background-color: #60B9BC;
+    color: white;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    font-family: 'Notable', sans-serif;
+    font-weight: 400;
+}
+
+
+.map-container li{
+    list-style: none;
+}
+
+.locations-container li {
+    list-style: none;
+}
